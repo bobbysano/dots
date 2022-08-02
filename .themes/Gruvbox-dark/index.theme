@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Gruvbox-dark
+Comment=Oomox with gruvbox colours.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Gruvbox-dark
+GtkTheme=Gruvbox-dark
+IconTheme=Gruvbox-dark
+MetacityTheme=Gruvbox-dark

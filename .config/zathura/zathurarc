@@ -1,0 +1,45 @@
+# Misc
+
+set selection-clipboard clipboard # Enable copy to clipboard
+
+# Colors
+set notification-error-bg       "#1d2021" # bg
+set notification-error-fg       "#fb4934" # red
+set notification-warning-bg     "#1d2021" # bg
+set notification-warning-fg     "#fabd2f" # yellow
+set notification-bg             "#1d2021" # bg
+set notification-fg             "#458588" # blue
+
+set completion-bg               "#504945" # bg2
+set completion-fg               "#ebdbb2" # fg
+set completion-group-bg         "#3c3836" # bg1
+set completion-group-fg         "#928374" # gray
+set completion-highlight-bg     "#458588" # blue
+set completion-highlight-fg     "#504945" # bg2
+
+# Define the color in index mode
+set index-bg                    "#504945" # bg2
+set index-fg                    "#ebdbb2" # fg
+set index-active-bg             "#458588" # blue
+set index-active-fg             "#504945" # bg2
+
+set inputbar-bg                 "#1d2021" # bg
+set inputbar-fg                 "#ebdbb2" # fg
+
+set statusbar-bg                "#504945" # bg2
+set statusbar-fg                "#ebdbb2" # fg
+
+set highlight-color             "#458588" # blue
+set highlight-active-color      "#d79921" # yellow
+
+set default-bg                  "#1d2021" # bg
+set default-fg                  "#ebdbb2" # fg
+set render-loading              true
+set render-loading-bg           "#1d2021" # bg
+set render-loading-fg           "#ebdbb2" # fg
+
+# Recolor book content's color
+set recolor-lightcolor          "#1d2021" # bg
+set recolor-darkcolor           "#ebdbb2" # fg
+set recolor                     "true"
+set recolor-keephue             "true"    # keep original color
