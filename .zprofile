@@ -17,13 +17,13 @@ export BROWSER=chromium
 ### Environment Variables ###
 
 # Paru
-export AURDEST=$FILES/Various/Builds
+export AURDEST=${AURDEST:="$FILES/Various/Builds"}
 
 # Anki
 export QT_PLUGIN_PATH=/usr/lib/qt/plugin
 
 # DXVK
-export $HOME/.config/dxvk/dxvk.conf
+export DXVK_CONFIG_FILE=${DXVK_CONFIG_FILE:="$HOME/.config/dxvk/dxvk.conf"}
 
 #Qt5
 export QT_QPA_PLATFORMTHEME=qt5ct
