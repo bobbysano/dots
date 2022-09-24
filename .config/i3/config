@@ -4,7 +4,10 @@ exec --no-startup-id nm-applet
 # Definitions
 set $mod Mod4
 set $term kitty
-font pango:monospace 8
+
+# Hide titlebars
+#font pango:DejaVu Sans Mono 0
+for_window [class="^.*"] border pixel 2
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -18,7 +21,7 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 
-#Window Borders
+# Window Borders
 default_border pixel 2
 default_floating_border pixel 2
 smart_borders no_gaps
@@ -53,6 +56,10 @@ bindsym $mod+r exec $term -e ranger
 bindsym $mod+t exec $term -e ncmpcpp
 bindsym $mod+a exec $term -e gotop
 bindsym $mod+s exec scrot
+
+bindsym $mod+shift+m exec pkill picom
+bindsym $mod+m exec picom -b
+
 
 # Function bindings
 bindsym $mod+Shift+t reload
@@ -180,4 +187,5 @@ exec_always --no-startup-id zsh $HOME/.config/polybar/launch.sh --gruvbox
 for_window [class="Steam"] floating enable
 assign [class="Chromium"] $ws1
 assign [class="discord"] $ws2
-for_window [title="ncmpcpp 0.9.2"] move to scratchpad­
+for_window [title="ncmpcpp 0.9.2"] move to scratchpad
+for_window [title="Picture in picture"] border pixel 0
