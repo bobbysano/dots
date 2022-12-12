@@ -1,5 +1,6 @@
 # Autoexec
 exec --no-startup-id nm-applet
+exec_always --no-startup-id zsh $HOME/.config/polybar/launch.sh --gruvbox
 
 # Definitions
 set $mod Mod4
@@ -45,7 +46,6 @@ gaps outer 5
 mouse_warping none
 
 # Bindings
-
 # Program bindings
 bindsym $mod+Return exec $term
 bindsym $mod+d exec --no-startup-id rofi -show run
@@ -59,7 +59,6 @@ bindsym $mod+s exec scrot
 
 bindsym $mod+shift+m exec pkill picom
 bindsym $mod+m exec picom -b
-
 
 # Function bindings
 bindsym $mod+Shift+t reload
@@ -178,14 +177,22 @@ bindsym $mod+Shift e mode "$mode_system"
 # Xresources
 exec_always --no-startup-id xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/.Xresources &
 
-# Polybar
-exec_always --no-startup-id zsh $HOME/.config/polybar/launch.sh --gruvbox
-
 #floating_minimum_size 400 x 400
 
 # Layout
-for_window [class="Steam"] floating enable
 assign [class="Chromium"] $ws1
+assign [class="chatterino"] $ws1
 assign [class="discord"] $ws2
-for_window [title="ncmpcpp 0.9.2"] move to scratchpad
+assign [class="Steam"] $ws3
+assign [class="qBittorrent"] $ws9
+
+
+for_window [title="ncmpcpp .*"] move scratchpad
+for_window [title="Friends List"] floating enable
+for_window [class="Galculator"] floating enable
+
 for_window [title="Picture in picture"] border pixel 0
+for_window [title="Picture-in-Picture"] border pixel 0
+# chatterino
+for_window [title=".*Chatterino .*"] resize shrink width 525px
+for_window [title=".*Usercard -.*"] floating enable
