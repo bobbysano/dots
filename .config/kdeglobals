@@ -1,0 +1,289 @@
+[$Version]
+update_info=kded.upd:kde3.0,mouse_cursor_theme.upd:kde3.4.99,kaccel.upd:kde3.3/r1
+
+[Appmenu Style]
+Style=Others
+
+[ColorEffects:Disabled]
+Color=56,56,56
+ColorAmount=-0.8
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+IntensityAmount=0.25
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=0,0,0
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.4
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=#282828
+BackgroundNormal=#1d2021
+DecorationFocus=#458588
+DecorationHover=#458588
+ForegroundActive=#fbf1c7
+ForegroundInactive=#928374
+ForegroundLink=#458588
+ForegroundNegative=#cc241d
+ForegroundNeutral=#d79921
+ForegroundNormal=#ebdbb2
+ForegroundPositive=#689d6a
+ForegroundVisited=#b16286
+
+[Colors:Selection]
+BackgroundAlternate=#83a598
+BackgroundNormal=#458588
+DecorationFocus=#458588
+DecorationHover=#458588
+ForegroundActive=#458588
+ForegroundInactive=#928374
+ForegroundLink=#458588
+ForegroundNegative=#cc241d
+ForegroundNeutral=#d79921
+ForegroundNormal=#fbf1c7
+ForegroundPositive=#689d6a
+ForegroundVisited=#b16286
+
+[Colors:Tooltip]
+BackgroundAlternate=17,51,86
+BackgroundNormal=16,48,80
+DecorationFocus=#458588
+DecorationHover=#458588
+ForegroundActive=#458588
+ForegroundInactive=#928374
+ForegroundLink=#458588
+ForegroundNegative=#cc241d
+ForegroundNeutral=#d79921
+ForegroundNormal=#ebdbb2
+ForegroundPositive=#689d6a
+ForegroundVisited=#b16286
+
+[Colors:View]
+BackgroundAlternate=#282828
+BackgroundNormal=#1d2021
+DecorationFocus=#458588
+DecorationHover=#458588
+ForegroundActive=#458588
+ForegroundInactive=#928374
+ForegroundLink=#458588
+ForegroundNegative=#cc241d
+ForegroundNeutral=#d79921
+ForegroundNormal=#ebdbb2
+ForegroundPositive=#689d6a
+ForegroundVisited=#b16286
+
+[Colors:Window]
+BackgroundAlternate=#282828
+BackgroundNormal=#1d2021
+DecorationFocus=#458588
+DecorationHover=#458588
+ForegroundActive=#458588
+ForegroundInactive=#928374
+ForegroundLink=#458588
+ForegroundNegative=#cc241d
+ForegroundNeutral=#d79921
+ForegroundNormal=#ebdbb2
+ForegroundPositive=#689d6a
+ForegroundVisited=#b16286
+
+[DesktopIcons]
+ActiveColor=#fbf1c7
+ActiveColor2=0,0,0
+ActiveEffect=togamma
+ActiveSemiTransparent=false
+ActiveValue=0.7
+Animated=true
+DefaultColor=#ebdbb2
+DefaultColor2=0,0,0
+DefaultEffect=none
+DefaultSemiTransparent=false
+DefaultValue=1
+DisabledColor=#616262
+DisabledColor2=0,0,0
+DisabledEffect=togray
+DisabledSemiTransparent=true
+DisabledValue=1
+Size=48
+
+[DialogIcons]
+ActiveColor=#fbf1c7
+ActiveColor2=0,0,0
+ActiveEffect=none
+ActiveSemiTransparent=false
+ActiveValue=1
+Animated=false
+DefaultColor=#ebdbb2
+DefaultColor2=0,0,0
+DefaultEffect=none
+DefaultSemiTransparent=false
+DefaultValue=1
+DisabledColor=#616262
+DisabledColor2=0,0,0
+DisabledEffect=togray
+DisabledSemiTransparent=true
+DisabledValue=1
+Size=32
+
+[DirSelect Dialog]
+DirSelectDialog Size=789,577
+
+[General]
+BrowserApplication[$e]=kde4-konqbrowser.desktop
+ColorScheme=Obsidian Coast
+XftAntialias=true
+XftHintStyle=hintmedium
+XftSubPixel=none
+desktopFont=Noto Sans,10,-1,5,50,0,0,0,0,0
+fixed=Noto Sans Mono,14,-1,5,50,0,0,0,0,0
+font=Noto Sans,10,-1,5,50,0,0,0,0,0
+menuFont=Noto Sans,10,-1,5,50,0,0,0,0,0
+shadeSortColumn=true
+smallestReadableFont=Noto Sans,8,-1,5,50,0,0,0,0,0
+taskbarFont=Noto Sans,10,-1,5,50,0,0,0,0,0
+toolBarFont=Noto Sans,10,-1,5,50,0,0,0,0,0
+widgetStyle=oxygen
+
+[Icons]
+Theme=oxygen
+
+[KDE]
+ShowDeleteCommand=true
+ShowIconsInMenuItems=true
+ShowIconsOnPushButtons=true
+SingleClick=false
+contrast=7
+
+[KDE-Global GUI Settings]
+GraphicEffectsLevel=7
+
+[KFileDialog Settings]
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=0
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Preview Width=129
+Previews=true
+Show Bookmarks=false
+Show Full Path=false
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+Speedbar Width=118
+View Style=Simple
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
+[Locale]
+CurrencyCode=US
+MonetaryThousandsSeparator=$0 $0
+ThousandsSeparator=$0 $0
+WeekStartDay=1
+
+[MainToolbarIcons]
+ActiveColor=#fbf1c7
+ActiveColor2=0,0,0
+ActiveEffect=none
+ActiveSemiTransparent=false
+ActiveValue=1
+Animated=false
+DefaultColor=#ebdbb2
+DefaultColor2=0,0,0
+DefaultEffect=none
+DefaultSemiTransparent=false
+DefaultValue=1
+DisabledColor=#616262
+DisabledColor2=0,0,0
+DisabledEffect=togray
+DisabledSemiTransparent=true
+DisabledValue=1
+Size=22
+
+[PanelIcons]
+ActiveColor=#fbf1c7
+ActiveColor2=0,0,0
+ActiveEffect=togamma
+ActiveSemiTransparent=false
+ActiveValue=0.7
+Animated=false
+DefaultColor=#ebdbb2
+DefaultColor2=0,0,0
+DefaultEffect=none
+DefaultSemiTransparent=false
+DefaultValue=1
+DisabledColor=#616262
+DisabledColor2=0,0,0
+DisabledEffect=togray
+DisabledSemiTransparent=true
+DisabledValue=1
+Size=32
+
+[PreviewSettings]
+MaximumRemoteSize=0
+
+[Shortcuts]
+FullScreen=Meta+F
+
+[SmallIcons]
+ActiveColor=#fbf1c7
+ActiveColor2=0,0,0
+ActiveEffect=none
+ActiveSemiTransparent=false
+ActiveValue=1
+Animated=false
+DefaultColor=#ebdbb2
+DefaultColor2=0,0,0
+DefaultEffect=none
+DefaultSemiTransparent=false
+DefaultValue=1
+DisabledColor=#616262
+DisabledColor2=0,0,0
+DisabledEffect=togray
+DisabledSemiTransparent=true
+DisabledValue=1
+Size=16
+
+[Toolbar style]
+ToolButtonStyle=TextBesideIcon
+ToolButtonStyleOtherToolbars=TextBesideIcon
+
+[ToolbarIcons]
+ActiveColor=#fbf1c7
+ActiveColor2=0,0,0
+ActiveEffect=none
+ActiveSemiTransparent=false
+ActiveValue=1
+Animated=false
+DefaultColor=#ebdbb2
+DefaultColor2=0,0,0
+DefaultEffect=none
+DefaultSemiTransparent=false
+DefaultValue=1
+DisabledColor=#616262
+DisabledColor2=0,0,0
+DisabledEffect=togray
+DisabledSemiTransparent=true
+DisabledValue=1
+Size=22
+
+
+[WM]
+activeBackground=#458588
+activeBlend=#fbf1c7
+activeFont=Noto Sans,10,-1,5,75,0,0,0,0,0
+activeForeground=#fbf1c7
+inactiveBackground=#1d2021
+inactiveBlend=75,71,67
+inactiveForeground=128,127,125
