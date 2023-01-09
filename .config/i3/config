@@ -1,14 +1,10 @@
-# Autoexec
+
 exec --no-startup-id nm-applet
 exec_always --no-startup-id zsh $HOME/.config/polybar/launch.sh --gruvbox
 
 # Definitions
 set $mod Mod4
 set $term kitty
-
-# Hide titlebars
-#font pango:DejaVu Sans Mono 0
-for_window [class="^.*"] border pixel 2
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -171,9 +167,6 @@ mode "$mode_system" {
 
 bindsym $mod+Shift e mode "$mode_system"
 
-# Exit i3 (logs you out of your X session)
-#bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
 # Xresources
 exec_always --no-startup-id xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/.Xresources &
 
@@ -185,14 +178,13 @@ assign [class="chatterino"] $ws1
 assign [class="discord"] $ws2
 assign [class="Steam"] $ws3
 assign [class="qBittorrent"] $ws9
-
-
 for_window [title="ncmpcpp .*"] move scratchpad
+
 for_window [title="Friends List"] floating enable
-for_window [class="Galculator"] floating enable
+for_window [class="kcalc"] floating enable
 
 for_window [title="Picture in picture"] border pixel 0
 for_window [title="Picture-in-Picture"] border pixel 0
-# chatterino
-for_window [title=".*Chatterino .*"] resize shrink width 525px
+
+for_window [title=".*Chatterino .*"] resize shrink width 520px
 for_window [title=".*Usercard -.*"] floating enable
