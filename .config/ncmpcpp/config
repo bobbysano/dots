@@ -29,7 +29,7 @@ mpd_connection_timeout = 5
 
 # Needed for tag editor and file operations to work.
 
-mpd_music_dir = " /media/ST8000VN004/Music/Primary"
+mpd_music_dir = "/mnt/storage/Music/Primary"
 
 mpd_crossfade_time = 0
 
