@@ -1,8 +1,8 @@
-
+## Autoexec ##
 exec --no-startup-id nm-applet
 exec_always --no-startup-id zsh $HOME/.config/polybar/launch.sh --gruvbox
 
-# Definitions
+## Definitions ##
 set $mod Mod4
 set $term kitty
 
@@ -18,7 +18,7 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 
-# Window Borders
+## Window Borders ##
 default_border pixel 2
 default_floating_border pixel 2
 smart_borders no_gaps
@@ -33,15 +33,16 @@ client.urgent           #cc241d #1d2021 #cc241d #cc241d   #cc241d
 client.placeholder      #ffffff #ffffff #ffffff #ffffff   #ffffff
 client.background       #1d2021
 
-# Gaps
+## Gaps ##
 smart_gaps on
 gaps inner 5
 gaps outer 5
 
-# Mouse Warping (jumps to middle of window)
+## Mouse Warping (jumps to middle of window) ##
 mouse_warping none
 
-# Bindings
+## Bindings ##
+
 # Program bindings
 bindsym $mod+Return exec $term
 bindsym $mod+d exec --no-startup-id rofi -show run
@@ -167,12 +168,15 @@ mode "$mode_system" {
 
 bindsym $mod+Shift e mode "$mode_system"
 
-# Xresources
+## Xresources ##
 exec_always --no-startup-id xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/.Xresources &
 
+## Floating window minimum size ##
 #floating_minimum_size 400 x 400
 
-# Layout
+## Layout ##
+
+# Workspaces
 assign [class="Chromium"] $ws1
 assign [class="chatterino"] $ws1
 assign [class="discord"] $ws2
@@ -180,11 +184,16 @@ assign [class="Steam"] $ws3
 assign [class="qBittorrent"] $ws9
 for_window [title="ncmpcpp .*"] move scratchpad
 
+# Floating windows
+for_window [class="Galculator"] floating enable
+# Steam friends list
 for_window [title="Friends List"] floating enable
-for_window [class="kcalc"] floating enable
+# Chatterino usercard
+for_window [title=".*Usercard -.*"] floating enable
 
+# Disable borders
 for_window [title="Picture in picture"] border pixel 0
 for_window [title="Picture-in-Picture"] border pixel 0
 
+# Set size
 for_window [title=".*Chatterino .*"] resize shrink width 520px
-for_window [title=".*Usercard -.*"] floating enable
