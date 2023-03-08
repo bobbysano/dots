@@ -178,6 +178,8 @@ exec_always --no-startup-id xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/.Xresourc
 
 # Workspaces
 assign [class="Chromium"] $ws1
+assign [class="Firefox"] $ws1
+assign [class="Librewolf"] $ws1
 assign [class="chatterino"] $ws1
 assign [class="discord"] $ws2
 assign [class="Steam"] $ws3
